@@ -7,8 +7,6 @@ def nyc_pigeon_organizer(data)
         if pigeons[key2] == nil
           pigeons[key2] = {}
           pigeons[key2][key] = []
-        else
-          pigeons[key2][key] = []
         end
       end
     end
