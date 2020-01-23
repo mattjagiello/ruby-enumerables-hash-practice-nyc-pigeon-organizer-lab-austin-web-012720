@@ -8,8 +8,8 @@ def nyc_pigeon_organizer(data)
           pigeons[value2][key] = []
         end
 
-        if !new_hash[name][prop].include?(attribute)
-          new_hash[name][prop] << attribute.to_s
+        if !pigeons[value2][key].include?(value1)
+          pigeons[value2][key] << value1.to_s
         end
       end
     end
