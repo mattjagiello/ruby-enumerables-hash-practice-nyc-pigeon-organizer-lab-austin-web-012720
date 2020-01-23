@@ -7,6 +7,7 @@ def nyc_pigeon_organizer(data)
         pigeons[key2] = {}
         pigeons[key2][key] = []
       end
+      end
     end
   end
   puts pigeons
