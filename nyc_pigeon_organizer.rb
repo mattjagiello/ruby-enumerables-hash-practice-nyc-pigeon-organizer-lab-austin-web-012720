@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  pigeons["Theo"] = data[:color]
+  #pigeons["Theo"] = data[:color]
   puts pigeons
   return pigeons
 end
