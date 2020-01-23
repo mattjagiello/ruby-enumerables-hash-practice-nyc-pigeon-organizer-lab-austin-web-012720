@@ -7,5 +7,7 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  pigeons[Theo] = "test"
+  pigeons[0][0] = "test"
+  puts pigeons
+  return pigeons
 end
