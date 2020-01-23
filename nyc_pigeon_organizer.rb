@@ -1,3 +1,7 @@
 def nyc_pigeon_organizer(data)
-  return {}
+  pigeons = {}
+  data.each do |key, value|
+    pigeons << value
+  end
+  return pigeons
 end
