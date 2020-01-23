@@ -4,6 +4,7 @@ def nyc_pigeon_organizer(data)
     value.each do |key1, value1|
       value1.each do |key2, value2|
         pigeons[key2] = value2
+        pigeons[key1] = value1
       end
     end
   end
