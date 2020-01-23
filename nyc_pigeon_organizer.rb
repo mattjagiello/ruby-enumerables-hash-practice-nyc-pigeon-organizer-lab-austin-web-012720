@@ -20,6 +20,7 @@ pigeons.each do |name, values|
       end
     end
   end
+end
   puts pigeons
   return pigeons
 end
