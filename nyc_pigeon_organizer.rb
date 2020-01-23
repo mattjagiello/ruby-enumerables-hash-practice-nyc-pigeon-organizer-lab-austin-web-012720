@@ -4,7 +4,13 @@ def nyc_pigeon_organizer(data)
     value.each do |key1, value1|
       value1.each do |key2, value2|
         pigeons[key2] = value2
-        pigeons[key2][:test] = value1
+        if !pigeons[value2].has_key?(key)
+          pigeons[value2][key] = []
+        end
+
+        if !new_hash[name][prop].include?(attribute)
+          new_hash[name][prop] << attribute.to_s
+        end
       end
     end
   end
