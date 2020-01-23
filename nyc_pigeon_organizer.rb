@@ -7,9 +7,7 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  pigeons.each do |key, value|
-    value = "test"
-  end
+  pigeons["Theo"] = data[:color]
   puts pigeons
   return pigeons
 end
