@@ -4,13 +4,6 @@ def nyc_pigeon_organizer(data)
     value.each do |key1, value1|
       value1.each do |key2, value2|
         pigeons[key2] = value2
-        if !pigeons[value2].has_key?(key)
-          pigeons[value2][key] = []
-        end
-
-        if !pigeons[value2][key].include?(value1)
-          pigeons[value2][key] << value1.to_s
-        end
       end
     end
   end
