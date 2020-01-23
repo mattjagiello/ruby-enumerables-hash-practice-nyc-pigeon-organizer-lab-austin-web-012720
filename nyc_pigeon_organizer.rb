@@ -10,5 +10,6 @@ def nyc_pigeon_organizer(data)
   data.each pigeons do |key, value|
     value = nyc_pigeon_organizer[0][0]
   end
+  put pigeons
   return pigeons
 end
