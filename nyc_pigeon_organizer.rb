@@ -7,5 +7,5 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  pigeons[0] = pigeon_data[0][1]
+  pigeons[Theo] = pigeon_data[0][1]
 end
