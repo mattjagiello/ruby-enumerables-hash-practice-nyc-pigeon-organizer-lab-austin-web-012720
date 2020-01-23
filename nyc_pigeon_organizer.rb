@@ -6,7 +6,6 @@ def nyc_pigeon_organizer(data)
         pigeons[key2] = value2
         if pigeons[key2] == nil
           pigeons[key2] = {}
-          pigeons[key2][key] = value1
         end
       end
     end
