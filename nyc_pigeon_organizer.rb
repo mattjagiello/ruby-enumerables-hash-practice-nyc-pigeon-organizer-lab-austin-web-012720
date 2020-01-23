@@ -3,9 +3,7 @@ def nyc_pigeon_organizer(data)
   data.each do |prop, hash|
     hash.each do |attribute, array|
       array.each do |name|
-        if !pigeons.has_key?(name)
-          pigeons[name] = {}
-        end
+        pigeons[name] = {}
 
         if !pigeons[name].has_key?(prop)
           pigeons[name][prop] = []
