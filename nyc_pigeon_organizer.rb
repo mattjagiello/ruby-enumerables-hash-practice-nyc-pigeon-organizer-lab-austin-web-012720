@@ -1,26 +1,21 @@
 def nyc_pigeon_organizer(data)
-  pigeons = {}
-  data.each do |color_gender_lives, values|
-    values.each do |value, array|
-      array.each do |name|
-        pigeons[name] = {}
-        pigeons[name][color_gender_lives] = []
-      end
-    end
-  end
-pigeons.each do |name, values|
-  values.each do |hashvalue, array|
-    data.each do |color_gender_lives, values|
-      values.each do |value, array|
-        array.each do |element|
-          if element == name && hashvalue == color_gender_lives
-            pigeon[name][hashvalue] << value.to_s
-          end
+  new_hash = {}
+  data.each { |prop, hash|
+    hash.each { |attribute, array|
+      array.each { |name|
+        if !new_hash.has_key?(name)
+          new_hash[name] = {}
         end
-      end
-    end
-  end
-end
-  puts pigeons
-  return pigeons
+
+        if !new_hash[name].has_key?(prop)
+          new_hash[name][prop] = []
+        end
+
+        if !new_hash[name][prop].include?(attribute)
+          new_hash[name][prop] << attribute.to_s
+        end
+      }
+    }
+  }
+  new_hash
 end
